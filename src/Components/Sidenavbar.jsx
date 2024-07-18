@@ -82,7 +82,7 @@ const Sidenavbar = () => {
               </a>
             </p>
           </div>
-          <div>
+          <div className="setting-btn">
             <p className="d-inline-flex gap-1">
               <a href="#" className="btn" role="button" data-bs-toggle="button">
                 <span className="users-icon">
@@ -92,13 +92,6 @@ const Sidenavbar = () => {
               </a>
             </p>
           </div>
-        </div>
-        <div>
-          <img
-            alt="img"
-            className="ad-img"
-            src="https://homemate.co.in/wp-content/uploads/2021/11/71-fyukCypL._SL1280_-600x600.jpg.webp"
-          />
         </div>
       </div>
     </div>

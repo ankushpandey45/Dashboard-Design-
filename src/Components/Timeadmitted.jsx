@@ -1,60 +1,49 @@
 import ReactApexChart from "react-apexcharts";
 
 const Timeadmitted = () => {
-  // Data for the line chart
   const series = [
     {
-      name: "Desktops",
-      data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+      name: "series1",
+      data: [31, 40, 28, 51, 42, 109, 100],
     },
   ];
 
-  // Options for the line chart
   const options = {
     chart: {
-      height: 350,
-      type: "line",
-      zoom: {
-        enabled: false,
-      },
+      height: 250,
+      type: "area",
     },
     dataLabels: {
       enabled: false,
     },
     stroke: {
-      curve: "straight",
-    },
-    title: {
-      //   text: "Product Trends by Month",
-      //   align: "left",
-    },
-    grid: {
-      row: {
-        colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
-        opacity: 0.5,
-      },
+      curve: "smooth",
     },
     xaxis: {
+      type: "datetime",
       categories: [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
+        "2018-09-19T00:00:00.000Z",
+        "2018-09-19T01:30:00.000Z",
+        "2018-09-19T02:30:00.000Z",
+        "2018-09-19T03:30:00.000Z",
+        "2018-09-19T04:30:00.000Z",
+        "2018-09-19T05:30:00.000Z",
+        "2018-09-19T06:30:00.000Z",
       ],
+    },
+    tooltip: {
+      x: {
+        format: "dd/MM/yy HH:mm",
+      },
     },
   };
 
   return (
     <div>
-      <div className="h6">
-        <h6 className="chart-heading">Time Admitted</h6>
+      <div className="h8">
+        <h6 className="chart-heading">Timeadmitted</h6>
         <span style={{ display: "flex" }}>
-          <h6 className="chart-heading2">Today</h6>
+          <h6 className="chart-heading">Today</h6>
           <select className="select"></select>
         </span>
       </div>
@@ -62,12 +51,11 @@ const Timeadmitted = () => {
         <ReactApexChart
           options={options}
           series={series}
-          type="line"
-          height={230}
-          width={750}
+          type="area"
+          height={240}
+          width={493}
         />
       </div>
-      <div id="html-dist"></div>
     </div>
   );
 };

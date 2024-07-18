@@ -31,7 +31,7 @@ const Navbar = () => {
               alt="User Avatar"
               className="rounded-image me-2"
             />
-            <h6 className="ms-2">Ankush pandu</h6>
+            <h6 className="ms-2">Ankush pandey</h6>
             <select className="select"></select>
           </div>
         </div>

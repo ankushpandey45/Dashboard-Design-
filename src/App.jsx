@@ -5,10 +5,12 @@ import Icon from "./Components/Icon";
 import BarCharts from "./Components/BarCharts";
 import Paichart from "./Components/Paichart";
 import Timeadmitted from "./Components/Timeadmitted";
+import Patientsdivision from "./Components/Patientsdivision";
+import MonthlyPatient from "./Components/MonthlyPatient";
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <div style={{ display: "flex" }}>
         <div>
@@ -23,13 +25,25 @@ function App() {
                 <Paichart />
               </div>
             </div>
-            <div className="Timeadmitted-div">
-              <Timeadmitted />
+            <div className="time-mnth-mainDiv">
+              <div className="Time-Division">
+                <div className="Timeadmitted-div">
+                  <Timeadmitted />
+                </div>
+                <div className="Division">
+                  <Patientsdivision />
+                </div>
+              </div>
+              <div className="Monthly-div">
+                <div className="Monthly">
+                  <MonthlyPatient />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
