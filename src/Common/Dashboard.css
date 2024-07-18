@@ -5,12 +5,7 @@
 nav {
   height: 75px;
 }
-/* .main-content {
-  overflow-x: hidden;
-  max-height: 80vh;
-  overflow-y: clip;
-  overflow: hidden;
-} */
+
 .form-control {
   border: none;
 }
@@ -58,6 +53,9 @@ nav {
   background-color: rgb(255, 255, 255);
   opacity: 0.8;
   /* padding: 10px; */
+}
+.bell:hover {
+  cursor: pointer;
 }
 .app-container {
   display: flex;

@@ -24,7 +24,7 @@ const Navbar = () => {
               </div>
             </form>
           </div>
-          <div className="d-flex align-items-center ms-auto">
+          <div className=" bell d-flex align-items-center ms-auto">
             <FontAwesomeIcon icon={faBell} className="me-3 " />
             <img
               src="https://cdn.britannica.com/52/252752-050-2E120356/Cricketer-Rohit-Sharma-2023.jpg"
