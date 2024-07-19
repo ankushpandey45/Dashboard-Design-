@@ -90,6 +90,8 @@ nav {
 }
 .btn-div {
   margin-left: 17px;
+  padding: 5px;
+  align-items: center;
 }
 .icon-div {
   display: flex;
@@ -289,4 +291,11 @@ li {
 }
 .setting-btn {
   margin-top: 30px;
+}
+.btn:focus {
+  background-color: #c7bdbd;
+  border: none;
+}
+.link-buttons{
+  margin-top: 5px;
 }
