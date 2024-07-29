@@ -9,7 +9,6 @@ import {
   faClockRotateLeft,
   faGear,
 } from "@fortawesome/free-solid-svg-icons";
-// import "./Sidenavbar.css"; // Import the CSS file
 
 const Sidenavbar = () => {
   const [activeButton, setActiveButton] = useState(null);
@@ -20,6 +19,7 @@ const Sidenavbar = () => {
 
   return (
     <div>
+      x
       <div className="side-nav">
         <div>
           <button className="btn register_btn">Register Patient +</button>
@@ -111,7 +111,7 @@ const Sidenavbar = () => {
               History
             </a>
           </div>
-          <div className=" setting-btn">
+          <div className="setting-btn">
             <a
               href="#"
               className={`btn ${activeButton === "setting" ? "active" : ""}`}
